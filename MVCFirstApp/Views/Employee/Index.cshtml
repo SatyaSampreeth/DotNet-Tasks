@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    var date = @DateTime.Now.ToShortDateString();
+    var message = "Hello";
+}
+
+
+<p>Hello Employee</p>
+<p>@DateTime.Now.ToShortDateString()</p>
+<p>@date</p>
+<p>@message</p>
+
+@if(DateTime.IsLeapYear(DateTime.Now.Year)){
+    <p>Leap Year</p>
+}
+else{
+    <p>Not a Leap Year</p>
+}
